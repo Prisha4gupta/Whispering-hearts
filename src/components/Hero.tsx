@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Heart, Shield, Globe } from 'lucide-react';
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section id="about" className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-pattern overflow-hidden" data-reveal>
       <div className="max-w-6xl mx-auto text-center space-y-8">
@@ -35,6 +37,7 @@ const Hero = () => {
             variant="hero" 
             size="lg" 
             className="text-lg px-8 py-4 h-auto font-semibold"
+            onClick={() => navigate('/start')}
           >
             Start Your Journey
           </Button>

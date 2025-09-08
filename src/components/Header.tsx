@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="fixed top-0 inset-x-0 z-20">
       <div className="mx-auto max-w-7xl px-4">
@@ -18,8 +20,8 @@ const Header = () => {
               <a href="#support" className="hover:text-foreground transition-colors">Support</a>
             </nav>
             <div className="flex items-center gap-2">
-              <Button variant="glass" size="sm" className="hidden md:inline-flex">Learn more</Button>
-              <Button variant="hero" size="sm" className="px-4">Start now</Button>
+              <Button variant="glass" size="sm" className="hidden md:inline-flex" onClick={() => navigate('/start')}>Learn more</Button>
+              <Button variant="hero" size="sm" className="px-4" onClick={() => navigate('/start')}>Start now</Button>
             </div>
           </div>
         </div>
