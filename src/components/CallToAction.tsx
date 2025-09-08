@@ -5,7 +5,7 @@ import { Heart, Shield, Sparkles, ArrowRight } from 'lucide-react';
 
 const CallToAction = () => {
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
+    <section id="support" className="py-20 px-4 relative overflow-hidden" data-reveal>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* CTA Header */}
         <div className="space-y-6 mb-12 fade-in-up">
@@ -64,8 +64,8 @@ const CallToAction = () => {
 
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-gradient-to-r from-accent/20 to-primary-glow/20 blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl animate-pulse" data-parallax data-speed="0.2"></div>
+        <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-gradient-to-r from-accent/20 to-primary-glow/20 blur-3xl animate-pulse delay-1000" data-parallax data-speed="0.35"></div>
       </div>
     </section>
   );

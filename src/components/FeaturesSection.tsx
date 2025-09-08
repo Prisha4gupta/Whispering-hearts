@@ -82,7 +82,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-20 px-4 bg-pattern relative overflow-hidden">
+    <section id="features" className="py-20 px-4 bg-pattern relative overflow-hidden" data-reveal>
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">
